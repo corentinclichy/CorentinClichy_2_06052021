@@ -19,82 +19,68 @@
     />
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <img src="../Public/images/logo/Reservia.svg" alt="Logo Reservia" />
-      </div>
-      <nav>
-        <a class="" href="#">Hébergement</a>
-        <a class="" href="#">Activites</a>
-        <a class="" href="#"><strong>S'inscrire</strong></a>
-      </nav>
-    </header>
-    <main>
-      <section id="search">
-        <div class="title">
-          <h1>Trouvez votre hebergement pour des vacances de rêve</h1>
-          <p>En plein centre ville ou en pleine nature</p>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <img src="../Public/images/logo/Reservia.svg" alt="Logo Reservia" />
         </div>
-
-        <form class="search-form">
-          <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
-          <input type="text" placeholder="Marseille - France" />
-          <button type="submit">Rechercher</button>
-        </form>
-
-        <div class="filtres">
-          <div class="economic">
-            <i class="fas fa-money-bill-wave"></i>
-            <a href="#">Economique</a>
+        <nav>
+          <a class="" href="#"><span>Hébergement</span></a>
+          <a class="" href="#">Activites</a>
+          <a class="" href="#"><strong>S'inscrire</strong></a>
+        </nav>
+      </header>
+      <main>
+        <section id="search">
+          <div class="title">
+            <h1>Trouvez votre hebergement pour des vacances de rêve</h1>
+            <p>En plein centre ville ou en pleine nature</p>
           </div>
-          <div class="familial">
-            <i class="fas fa-child"></i>
-            <a href="#">Familial</a>
-          </div>
-          <div class="romantique">
-            <i class="fas fa-heart"></i>
-            <a href="#">Romantique</a>
-          </div>
-          <div class="animaux">
-            <i class="fas fa-heart"></i>
-            <a href="#">Animaux autorisés</a>
-          </div>
-        </div>
 
-        <div class="result_infos">
-          <i class="fas fa-info"></i>
-          <p>Plus de 500 logements sont disponibles dans cette ville</p>
-        </div>
-      </section>
+          <form class="search-form">
+            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+            <input type="text" value="Marseille - France" />
+            <button type="submit" class="search-btn">Rechercher</button>
+          </form>
 
-      <section id="hebergements">
-        <div class="main_results">
-          <h1>Hébergements à Marseille</h1>
-          <div class="cards">
-            <div class="card">
-              <img src="" alt="" srcset="" />
-              <h3>Auberge la Cannebière</h3>
-              <p>Nuit à partir de <strong>25€</strong></p>
-              <div class="notation">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-              </div>
+          <div class="filtres">
+            <h3>Filtres</h3>
+            <div class="filtres-options">
+              <button class="economic filter-btn">
+                <div class="filter-icon">
+                  <i class="fas fa-money-bill-wave"></i>
+                </div>
+                Economique
+              </button>
+              <button class="familial filter-btn">
+                <div class="filter-icon"><i class="fas fa-child"></i></div>
+                Familial
+              </button>
+              <button class="romantique filter-btn">
+                <div class="filter-icon"><i class="fas fa-heart"></i></div>
+                Romantique
+              </button>
+              <button class="animaux filter-btn">
+                <div class="filter-icon"><i class="fas fa-dog"></i></div>
+                Animaux autorisés
+              </button>
             </div>
           </div>
-          <a href="#">Affichez plus</a>
-        </div>
-        <div class="popular-results">
-          <div class="title">
-            <h1>Les plus populaires</h1>
-            <i class="fas fa-chart-line"></i>
-            <div class="cards populaire">
-              <div class="card populaire">
+
+          <div class="result-infos">
+            <div class="info-icon"><i class="fas fa-info"></i></div>
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+          </div>
+        </section>
+
+        <section id="hebergements">
+          <div class="main_results">
+            <h1>Hébergements à Marseille</h1>
+            <div class="cards">
+              <div class="card">
                 <img src="" alt="" srcset="" />
-                <h3>Hotel Le soleil du matin</h3>
-                <p>Nuit à partir de <strong>128€</strong></p>
+                <h3>Auberge la Cannebière</h3>
+                <p>Nuit à partir de <strong>25€</strong></p>
                 <div class="notation">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -104,41 +90,62 @@
                 </div>
               </div>
             </div>
+            <a href="#">Affichez plus</a>
           </div>
-        </div>
-      </section>
-      <section id="activités">
-        <h1>Activités à Marseille</h1>
-        <div class="results">
-          <div class=""></div>
-          <div class="">
-            <div class="card-activite">
-              <img src="" alt="" srcset="" />
-              <p href="#">Vieux ports</p>
+          <div class="popular-results">
+            <div class="title">
+              <h1>Les plus populaires</h1>
+              <i class="fas fa-chart-line"></i>
+              <div class="cards populaire">
+                <div class="card populaire">
+                  <img src="" alt="" srcset="" />
+                  <h3>Hotel Le soleil du matin</h3>
+                  <p>Nuit à partir de <strong>128€</strong></p>
+                  <div class="notation">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class=""></div>
-          <div class=""></div>
+        </section>
+        <section id="activités">
+          <h1>Activités à Marseille</h1>
+          <div class="results">
+            <div class=""></div>
+            <div class="">
+              <div class="card-activite">
+                <img src="" alt="" srcset="" />
+                <p href="#">Vieux ports</p>
+              </div>
+            </div>
+            <div class=""></div>
+            <div class=""></div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="">
+          <h5>A propos</h5>
+          <a href="#">Fonctionnement du Site</a>
+          <a href="#">Condition générales de vente</a>
+          <a href="#">Données et confidentialité</a>
         </div>
-      </section>
-    </main>
-    <footer>
-      <div class="">
-        <h5>A propos</h5>
-        <a href="#">Fonctionnement du Site</a>
-        <a href="#">Condition générales de vente</a>
-        <a href="#">Données et confidentialité</a>
-      </div>
-      <div class="">
-        <h5>Nos Hébergements</h5>
-        <a href="#">Fonctionnement du Site</a>
-        <a href="#">Condition générales de vente</a>
-      </div>
-      <div class="">
-        <h5>Assistance</h5>
-        <a href="#">Centre d'aide</a>
-        <a href="#">Nous contacter</a>
-      </div>
-    </footer>
+        <div class="">
+          <h5>Nos Hébergements</h5>
+          <a href="#">Fonctionnement du Site</a>
+          <a href="#">Condition générales de vente</a>
+        </div>
+        <div class="">
+          <h5>Assistance</h5>
+          <a href="#">Centre d'aide</a>
+          <a href="#">Nous contacter</a>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

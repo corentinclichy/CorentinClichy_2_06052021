@@ -1,5 +1,6 @@
 /* Les couleurs de la charte sont le bleu #0065FC, et sa version plus claire #DEEBFF ainsi que le gris pour le fond #F2F2F2. */
 
+/* General styling */
 * {
   margin: 0;
   padding: 0;
@@ -8,4 +9,164 @@
 
 body {
   font-family: "Raleway", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #0065fc;
+}
+
+.container {
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+/* Header styling */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+header > nav {
+  height: 100%;
+  display: flex;
+}
+
+header > nav > a {
+  padding: 0 1.5rem;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+header > nav > a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #0065fc;
+  opacity: 0;
+}
+
+header > nav > a:hover:before {
+  opacity: 1;
+}
+
+/* Search Stylings */
+
+#search .title h1 {
+  padding-bottom: 0.5rem;
+}
+
+.search-form {
+  display: flex;
+  padding-top: 1.5rem;
+}
+.search-form > input {
+  border: none;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  font-weight: bold;
+  padding: 0 0.5rem;
+  min-width: 230px;
+}
+.search-form > input:focus {
+  outline: none;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: #f2f2f2;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 1px solid lightgray;
+  border-right: none;
+}
+
+.search-btn {
+  color: white;
+  background-color: #0065fc;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* filtres styling */
+
+.filtres {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.filtres-options {
+  margin-left: 1rem;
+}
+
+.filter-btn {
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 30px;
+  padding: 0.5rem;
+  padding-left: 2.3rem;
+  font-weight: bold;
+  position: relative;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+.filter-icon {
+  height: 33px;
+  width: 33px;
+  position: absolute;
+  top: -1px;
+  left: -5px;
+  border-radius: 50%;
+  background-color: #deebff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0065fc;
+  font-size: 0.8rem;
+}
+
+/* Result info styling */
+
+.result-infos {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0rem;
+}
+
+.result-infos p {
+  color: gray;
+  padding-left: 0.5rem;
+}
+
+.info-icon {
+  border: 1px solid lightgray;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-icon i {
+  font-size: 0.5rem;
+  color: #0065fc;
 }
