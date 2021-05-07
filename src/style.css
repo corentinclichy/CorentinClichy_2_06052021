@@ -636,7 +636,7 @@ header {
   height: 70vh;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(10, 1fr);
-  grid-column-gap: 10px;
+  grid-column-gap: 50px;
   grid-row-gap: 40px;
   margin-top: 1.5rem;
 }
