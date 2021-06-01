@@ -1,6 +1,8 @@
 /* Les couleurs de la charte sont le bleu #0065FC, et sa version plus claire #DEEBFF ainsi que le gris pour le fond #F2F2F2. */
 
-/* General styling */
+/**************************************************************** 
+General styling 
+****************************************************************/
 * {
   margin: 0;
   padding: 0;
@@ -27,7 +29,9 @@ a {
   }
 }
 
-/* Header styling */
+/**************************************************************** 
+HEADER
+****************************************************************/
 
 header {
   display: grid;
@@ -98,11 +102,11 @@ header {
 }
 
 .navbar__link:hover {
-  color: #0065fc;
+  color: #237afc;
 }
 
 .navbar__link--signup {
-  color: #0065fc;
+  color: #237afc;
   padding: 0 1.5rem;
   height: 100%;
   position: relative;
@@ -181,7 +185,9 @@ header {
   }
 }
 
-/* Search Stylings */
+/**************************************************************** 
+SEARCH SECTION
+****************************************************************/
 
 .search {
   display: flex;
@@ -251,6 +257,10 @@ header {
     justify-content: center;
   }
 
+  .search__search-form__search-btn {
+    border-radius: 10px;
+  }
+
   .search__search-form__search-btn span {
     display: none;
   }
@@ -258,6 +268,7 @@ header {
     display: flex;
   }
 }
+
 /* filtres styling */
 
 .search__filters {
@@ -279,7 +290,7 @@ header {
   padding-left: 4rem;
   font-weight: bold;
   position: relative;
-  margin: 0 0.5rem;
+  margin: 0.5rem 0.5rem;
   cursor: pointer;
   font-size: 1.1rem;
   background: linear-gradient(to left, white 50%, #deebff 50%) right;
@@ -329,8 +340,6 @@ header {
   }
 }
 
-/* Result info styling */
-
 .search__result-infos {
   display: flex;
   align-items: center;
@@ -358,7 +367,9 @@ header {
   color: #0065fc;
 }
 
-/* Section HEBERGEMENT */
+/**************************************************************** 
+HEBERGEMENT SECTION
+****************************************************************/
 
 /* MAIN RESULT STYLING */
 
@@ -395,7 +406,7 @@ header {
 .main-results__cards {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  flex-wrap: wrap;
   flex: 1;
 }
 
@@ -407,11 +418,14 @@ header {
   padding: 5px;
   margin: 1rem;
   box-shadow: -1px 0px 10px 0px rgba(179, 179, 179, 0.46);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .card__card-img {
   width: 100%;
-  height: 60%;
+  flex: 1;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   overflow: hidden;
@@ -448,7 +462,7 @@ header {
   color: lightgray;
 }
 
-/*  Popular */
+/*  Popular styling */
 
 .heberg__popular {
   width: 30%;
@@ -494,8 +508,8 @@ header {
   height: 100%;
   flex-direction: column;
   justify-content: space-between;
-  padding-left: 20px;
   padding: 10px;
+  margin-left: 9px;
   font-size: 0.8rem;
 }
 
@@ -504,7 +518,6 @@ header {
 }
 
 .popular__card__infos__notation {
-  padding-bottom: 1rem;
   font-size: 0.7rem;
 }
 .popular__card__infos__notation .fill {
@@ -516,7 +529,7 @@ header {
 }
 
 .popular__card__img {
-  width: 60%;
+  max-width: 40%;
   height: 100%;
   overflow: hidden;
   border-top-left-radius: 20px;
@@ -530,7 +543,7 @@ header {
   object-position: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 890px) {
   .heberg {
     display: flex;
     flex-direction: column-reverse;
@@ -559,6 +572,7 @@ header {
   .popular__cards {
     width: 90%;
     margin: auto;
+    flex-direction: column;
   }
 
   .popular__card {
@@ -575,6 +589,7 @@ header {
     padding-left: 20px;
     padding: 10px;
     font-size: 0.8rem;
+    text-overflow: ellipsis;
   }
 
   .heberg__main-results {
@@ -607,7 +622,7 @@ header {
     border-radius: 20px;
     width: 100%;
     height: 200px;
-    padding: 0px;
+    padding: 5px;
     margin: 0rem;
     margin-bottom: 2rem;
   }
@@ -625,7 +640,9 @@ header {
   }
 }
 
-/* ACTIVITE */
+/**************************************************************** 
+ACTIVITE SECTION
+****************************************************************/
 
 .activite {
   width: 100%;
@@ -736,7 +753,9 @@ header {
   }
 }
 
-/* FOOTER */
+/**************************************************************** 
+ACTIVITE SECTION
+****************************************************************/
 
 footer {
   margin-top: 2rem;
