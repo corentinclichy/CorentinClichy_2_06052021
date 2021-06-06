@@ -790,7 +790,7 @@ footer {
   padding-bottom: 0.5rem;
 }
 
-.footer__container__col h5 {
+.footer__container__col h4 {
   padding-bottom: 1.3rem;
 }
 
@@ -815,7 +815,7 @@ footer {
     padding-bottom: 30px;
   }
 
-  .footer__container__col h5 {
+  .footer__container__col h4 {
     padding-bottom: 1rem;
   }
 }
