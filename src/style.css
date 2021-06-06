@@ -49,6 +49,10 @@ header {
   align-items: center;
 }
 
+.header__logo img {
+  cursor: pointer;
+}
+
 .header__navbar {
   grid-area: 1 / 2 / 2 / 3;
   display: flex;
@@ -421,6 +425,7 @@ HEBERGEMENT SECTION
   display: flex;
   flex-direction: column;
   justify-content: center;
+  cursor: pointer;
 }
 
 .card__card-img {
@@ -501,6 +506,7 @@ HEBERGEMENT SECTION
   height: 150px;
   margin: 0;
   box-shadow: -1px 0px 10px 0px rgba(179, 179, 179, 0.46);
+  cursor: pointer;
 }
 
 .popular__card__infos {
@@ -684,6 +690,7 @@ ACTIVITE SECTION
   flex-direction: column;
   border-radius: 20px;
   box-shadow: -1px 0px 10px 0px rgba(179, 179, 179, 0.46);
+  cursor: pointer;
 }
 .activite__card__img {
   flex: 1;
